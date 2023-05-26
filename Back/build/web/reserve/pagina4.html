@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagina4.css">
+    <link rel="icon" type="image/x-icon" href="logorecortadoverde.png">
+
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <div class="logoSpace">
+            <img src="logorecortadoverde.png" class="logo">
+            <div class="Moka"><a href="file:///C:/Users/S2-PC00/Desktop/pagina%20principal/mainpage/index.html" class="tittle">MOKA COFFEE</a></div>
+        </div>
+        <div class="movingText">
+            <marquee>Try our new coffees with a discount until next Wednesday</marquee>
+        </div>
+        <div class="headerRightPart">
+            <div class="carrito">
+                <img src="carrito-de-compras.png">
+            </div>
+            <div class="loginSpace">
+                <a href="file:///C:/Users/S2-PC00/Desktop/pagina%20login/paginalogin.html" target="_blank" class="loginButton">
+                    Log-in
+                </a>
+                <a href="file:///C:/Users/S2-PC00/Desktop/pagina%20register/pagina%20register.html" target="_blank" class="registerButton">
+                    Register
+                </a>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+    </div>
+    <div class="body">
+        <div class="bodyfullpart">
+            <div class="leftbody">
+                <img class="leftimage" src="imagen fondo pagina 4.png">
+            </div>
+            <div class="rightbody">
+                <div class="titlerightbody">
+                    RESERVATION OF TABLES
+                </div>
+                <div class="mañanatardebuttons">
+                    <button class="mañanabutton">MORNING</button>
+                    <button class="tardebutton">AFTERNOON</button>
+                </div>
+                <div class="fechahorabox">
+                    <input type="date" name="" id="datebox">
+                    <input type="time" name="" id="timebox">
+                </div>
+                <div class="npersonasbox">NUMBER OF PEOPLE
+                    <div class="npersonasbuttons">
+                        <button class="button">1</button>
+                        <button class="button">2</button>
+                        <button class="button">3</button>
+                        <button class="button">4</button>
+                        <button class="button">5</button>
+                        <button class="button">6</button>
+                        <button class="button">7</button>
+                        <button class="button">8</button>
+                    </div>
+                </div>
+                <div class="datospersonalestitles">
+                    <div class="nombretitle">To name:
+                        <input class="nombrebox"></input>
+                    </div>
+                    <div class="correotitle">Email:
+                        <input class="correobox"></input>
+                    </div>
+                    <div class="telefonotitle">Phone number:
+                        <input class="telefonobox"></input>
+                    </div>
+                </div>
+                <div class="textpartbox">
+                    <div>
+                        <input type="checkbox" name="my-checkbox" id="checkbox">
+                        <label for="opt-in"></label>
+                    </div>
+                    <div class="textpart">I wish to receive informative emails about discounts and new products from Moka Coffee.</div>
+                </div>
+                <div class="completarreservatext">
+                    COMPLETE RESERVATION
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="linepartfooter">
+                <div class="greenline"></div>
+                <div class="blackline"></div>
+            </div>
+            <div class="fullpartfooter">
+                <div class="firstpartfooter">
+                    <div class="firstpartfooter1">
+                        <div class="titlefooter">
+                            MOKA COFFEE
+                        </div>
+                        <img class="logofooter" src="logorecortadoverde.png">
+                    </div>
+                    <div class="iconosfooter">
+                        <img src="instagram.png" class="iconossocial">
+                        <img src="signo-de-twitter.png" class="iconossocial">
+                        <img src="facebook.png" class="iconossocial">
+                        <img src="youtube.png" class="iconossocial">
+                    </div>
+                </div>
+                <div class="secondpartfooter">
+                    <div class="secondpartfooter1">
+                        <div class="secondtitlefooter">
+                            ABOUT US
+                        </div>
+                        <div class="secondtextfooter">
+                            <a href="MOKA COFFEE.pdf" target="_blank" class="textfooter">¿What we are?</a>
+                            <a href="RESPONSABILIDADES DE MOKA COFFEE.docx" class="textfooter">Responsability</a>
+                            <a href="CONTACTO MOKA COFFEE.pdf" target="_blank" class="textfooter">Contact</a>
+                        </div>
+                    </div>
+                    <div class="secondpartfooter2">
+                        <div class="secondtitlefooter">
+                            THE COMPANY
+                        </div>
+                        <div class="secondtextfooter">
+                            <a href="http://localhost:8080/cafeteriaFinal/pagina empleados/pageemployees.html" class="textfooter">Work with us</a>
+                            <a href="Politica de Cookies.docx" class="textfooter">Cookies policy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Legal warning</a>
+                            <a href="PUNTOS A DESTACAR DE LOS CONVENIOS COLECTIVOS.docx" class="textfooter">Important points of the collective agreement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

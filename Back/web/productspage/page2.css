@@ -1,0 +1,438 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans-nova-cond-ultra-bold');
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #232325;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.logoSpace {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.headerRightPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    gap: 20px;
+}
+
+.loginSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginButton {
+    border-radius: 10px;
+    background-color: #09953e;
+    width: 100px;
+    height: 35px;
+    font-size: x-large;
+    color: white;
+    border: 10px black;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    text-align: center;
+}
+
+.registerButton {
+    color: white;
+    font-size: 120%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Moka {
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 250%;
+    color: white;
+    font-weight: 900;
+
+}
+
+.movingText {
+    color: white;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 150%;
+}
+
+.carrito{
+    width: 50px;
+    height:50px;
+}
+
+.carrito img{
+    width: 50px;
+    height:50px;
+}
+
+.sticky {
+
+    top: 0;
+    width: 100%;
+}
+
+.tittle {
+    color: white;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.linepartfooter {
+    display: flex;
+    flex-direction: row;
+}
+.greenline{
+    width: 25%;
+    height: 25px;
+    background-color: #0faf4c;
+}
+.blackline{
+    width: 75%;
+    height: 25px;
+    background-color: #232325;
+}
+.fullpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+    padding: 40px;
+    background-color: #232325;
+}
+.firstpartfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-left: 50px;
+}
+.firstpartfooter1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.titlefooter{
+    font-size: 270%;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.logofooter {
+    width: 90px;
+    height: 90px;
+}
+.iconosfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.iconossocial {
+    width: 45px;
+    height: 45px;
+}
+.secondpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 7px;
+}
+.secondpartfooter1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondpartfooter2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondtitlefooter{
+    font-size: 220%;
+    color: #09953e;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.secondtextfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textfooter{
+    font-size: 120%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.tittle {
+    color: white;
+}
+
+
+.productlist {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.productrow {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    background-color: gray;
+
+}
+
+
+div.productrow {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    white-space: nowrap;
+    color: black;
+    background-color: gray;
+
+}
+
+div.productrow a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+div.productrow a:hover {
+    background-color: #777;
+}
+
+.imgrow1 {
+    width: 325px;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.rowtitle1 {
+    font-size: 500%;
+    color: rgb(0, 0, 0);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.listrow1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.productrow {
+    height: auto;
+    width: auto;
+    overflow-y: auto;
+    background-color: green;
+    border-radius: 5px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+.Flipped,
+.Flipped .imgrow1 {
+    transform: rotateX(180deg);
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: gainsboro;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #09953e;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2212;
+}
+
+.imgdiv1 {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.textrow1 {
+    transform: rotateX(180deg);
+    text-align: center;
+    font-size: 200%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divisor {
+    font-size: 800%;
+}
+
+.addbutton {
+    width: 325px;
+    height: 50px;
+    align-items: center;
+    background-color: #09953e;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 80%;
+    border-radius:25px;
+}
+
+.category-row{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1305px){
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        padding: 20px;
+        background-color: #232325;
+    }
+}
+@media only screen and (max-width: 1532px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -4px;
+    }
+    .linepartfooter {
+        display: flex;
+        flex-direction: row;
+    }
+    .greenline{
+        width: 25%;
+        height: 20px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 20px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        padding: 20px;
+        background-color: #232325;
+        justify-content: center;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-left: 0px;
+    }
+    .firstpartfooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .titlefooter{
+        font-size: 220%;
+        color: white;
+        text-align: center;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .logofooter {
+        width: 75px;
+        height: 75px;
+    }
+    .iconosfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .iconossocial {
+        width: 35px;
+        height: 35px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        margin-top: 7px;
+    }
+    .secondpartfooter1{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondpartfooter2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondtitlefooter{
+        font-size: 200%;
+        color: #09953e;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .secondtextfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .textfooter{
+        font-size: 100%;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}

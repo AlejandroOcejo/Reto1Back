@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagina register.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="register.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <img class="imagenfondo" src="wp8508184.png">
+    <div class="centerpart">
+        <div class="firstpart">
+            <div class="logo">
+                <img class="logoimage" src="logorecortadoverde.png">
+            </div>
+            <div class="singintitle">
+                SIGN IN
+            </div>
+        </div>
+        <div class="secondpart">
+            <div class="nombretitle">NAME:
+                <input class="nombretext" id="nombreField"></input>
+            </div>
+            <div class="apellidostitle">LASTNAME:
+                <input class="apellidostext" id="apellidosField"></input>
+            </div>
+            <div class="correotelefonopart">
+                <div class="correotitle">EMAIL:
+                    <input class="correotext" type="email" id="correoField"></input>
+                </div>
+                <div class="telefonotitle">PHONE NUMBER:
+                    <input class="telefonotext" type="number" id="telefonoField"></input>
+                </div>
+            </div>
+            <div class="contraseñatitle">PASSWORD
+                <input class="contraseñatext" type="password" id="contrasenaField"></input>
+            </div>
+        </div>
+        <div class="buttonpart">
+            <button class="registrarsebutton"  onclick="sendDataToServer()">
+                REGISTER
+            </button>
+        </div>
+    </div>
+</body>
+</html>

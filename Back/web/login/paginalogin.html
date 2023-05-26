@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="paginalogin.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="login.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <img class="imagenfondo" src="wp8508184.png">
+        <div class="centerpart">
+            <div class="firstpart">
+                <div class="logo">
+                    <img class="logoimage" src="logorecortadoverde.png">
+                </div>
+                <div class="singintitle">
+                    LOG IN
+                </div>
+            </div>
+            <div class="secondpart">
+                <div class="correotitle">CORREO ELECTRÓNICO:
+                    <input class="correotext" id="correoField"></input>
+                </div>
+                <div class="contraseñatitle">CONTRASEÑA:
+                    <input class="contraseñatext" id="contrasenaField"></input>
+                </div>
+                <div class="terminostext">
+                    <div>
+                        <input type="checkbox" name="my-checkbox" id="checkbox">
+                        <label for="opt-in"></label>
+                    </div>
+                    <div class="textpart">He leido y acepto la política de privacidad y las<br> condiciones de uso de Moka Coffee</div>
+                </div>
+            </div>
+            <div class="buttonpart">
+                <button class="registrarsebutton" onclick="sendDataToServer()">
+                    LOG IN
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

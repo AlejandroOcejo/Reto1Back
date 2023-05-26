@@ -1,0 +1,757 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans-nova-cond-ultra-bold');
+@import url('https://fonts.cdnfonts.com/css/gill-sans?styles=17577');
+@import url('https://fonts.cdnfonts.com/css/rubik?styles=19495');
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #232325;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.logoSpace {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+.headerRightPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    gap: 20px;
+}
+.loginSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.loginButton {
+    border-radius: 10px;
+    background-color: #09953e;
+    width: 100px;
+    height: 35px;
+    font-size: x-large;
+    color: white;
+    border: 10px black;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    text-align: center;
+}
+.registerButton {
+    color: white;
+    font-size: 120%;
+    font-family: 'Rubik', sans-serif;
+}
+.Moka {
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 250%;
+    color: white;
+    font-weight: 900;
+
+}
+.movingText {
+    color: white;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 150%;
+}
+.carrito{
+    width: 50px;
+    height:50px;
+}
+.carrito img{
+    width: 50px;
+    height:50px;
+}
+
+.sticky {
+
+    top: 0;
+    width: 100%;
+}
+* {
+    box-sizing: border-box
+}
+.tittle {
+    color: white;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: -4px;
+}
+.linepartfooter {
+    display: flex;
+    flex-direction: row;
+}
+.greenline{
+    width: 25%;
+    height: 25px;
+    background-color: #0faf4c;
+}
+.blackline{
+    width: 75%;
+    height: 25px;
+    background-color: #232325;
+}
+.fullpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+    padding: 40px;
+    background-color: #232325;
+}
+.firstpartfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-left: 50px;
+}
+.firstpartfooter1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.titlefooter{
+    font-size: 270%;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.logofooter {
+    width: 90px;
+    height: 90px;
+}
+.iconosfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.iconossocial {
+    width: 45px;
+    height: 45px;
+}
+.secondpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 7px;
+}
+.secondpartfooter1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondpartfooter2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondtitlefooter{
+    font-size: 220%;
+    color: #09953e;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.secondtextfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textfooter{
+    font-size: 120%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+
+.bodyfullpart {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+}
+.leftbody {
+    width: 40%;
+    height: 95%;
+}
+.leftimage {
+    width: 100%;
+}
+.rightbody {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+.titlerightbody {
+    color: #09953e;
+    font-size: 230%;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    margin-top: 50px;
+    text-align: center;
+}
+.deliveryimages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.deliverysbuttons {
+    width: 480px;
+    height: 130px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding: 20px;
+    box-shadow: 0px 5px 5px #888;
+    color:black;
+}
+.deliveryuber {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+.deliveryglovo {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.glovoimage {
+    width: 480px;
+    height: 300px;
+    box-shadow: 0px 5px 5px #888;
+}
+.uberimage {
+    width: 480px;
+    height: 300px;
+    box-shadow: 0px 5px 5px #888;
+}
+.buttondeliver {
+    height: 25px;
+    width: 100px;
+    box-shadow: 0px 2px 2px #888;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    color: white;
+    background-color: #09953e;
+    border: 0px;
+    margin-top: 10px;
+}
+.titlebuttons {
+    color:black;
+    font-size: 130%;
+    font-family: 'Gill Sans', sans-serif;
+}
+.textbuttons{
+    color: black;
+    font-family: 'Rubik', sans-serif;
+}
+.secondtitlerightbody{
+    color: black;
+    font-size: 200%;
+    text-align: left;
+    font-family: 'Gill Sans', sans-serif;
+    padding-left: 81px;
+}
+.ubicacionespart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding-left: 81px;
+}
+.firstubication{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 150%;
+    font-family: 'Gill Sans', sans-serif;
+    gap: 15px;
+}
+.secondubication{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 150%;
+    font-family: 'Gill Sans', sans-serif;
+    gap: 15px;
+}
+.thirdubication{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 150%;
+    font-family: 'Gill Sans', sans-serif;
+    gap: 15px;
+}
+.firstpartrightbody{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.secondpartrightbody{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media only screen and (max-width: 1700px){
+    .leftbody{
+        width: 0%;
+        height: 0%;
+    }
+    .rightbody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .ubicacionespart{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    .secondtitlerightbody{
+        color: black;
+        font-size: 160%;
+        text-align: center;
+        font-family: 'Gill Sans', sans-serif;
+    }
+}
+@media only screen and (max-width: 1325px){
+    .greenline{
+        width: 25%;
+        height: 20px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 20px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        padding: 20px;
+        background-color: #232325;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-left: 30px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        margin-top: 7px;
+    }
+}
+@media only screen and (max-width: 1305px){
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        padding: 20px;
+        background-color: #232325;
+    }
+}
+@media only screen and (max-width: 1532px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -4px;
+    }
+    .linepartfooter {
+        display: flex;
+        flex-direction: row;
+    }
+    .greenline{
+        width: 25%;
+        height: 20px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 20px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        padding: 20px;
+        background-color: #232325;
+        justify-content: center;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-left: 0px;
+    }
+    .firstpartfooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .titlefooter{
+        font-size: 220%;
+        color: white;
+        text-align: center;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .logofooter {
+        width: 75px;
+        height: 75px;
+    }
+    .iconosfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .iconossocial {
+        width: 35px;
+        height: 35px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        margin-top: 7px;
+    }
+    .secondpartfooter1{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondpartfooter2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondtitlefooter{
+        font-size: 200%;
+        color: #09953e;
+        font-family: 'Gill Sans', sans-serif;
+    }
+    .secondtextfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .textfooter{
+        font-size: 100%;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+@media only screen and (max-width: 1066px){
+    .leftbody{
+        width: 0%;
+        height: 0%;
+    }
+    .rightbody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: #232325;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .Moka {
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        font-size: 140%;
+        color: white;
+    }
+    .movingText {
+        color: white;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        font-size: 0%;
+    }
+    .headerRightPart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 5px;
+        gap: 10px;
+    }
+    .loginSpace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .loginButton {
+        border-radius: 10px;
+        background-color: #09953e;
+        width: 60px;
+        height: 30px;
+        font-size: 80%;
+        color: white;
+        border: 10px black;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        align-items: center;
+    }
+    .registerButton {
+        color: white;
+        font-size: 80%;
+        font-family: 'Rubik', sans-serif;
+    }
+    .carrito img{
+        width: 40px;
+        height: 40px;
+        align-content: center;
+    }
+    .titlerightbody {
+        color: #09953e;
+        font-size: 200%;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        text-align: center;
+        margin-top: 10px;
+    }
+    .deliveryimages {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .deliverysbuttons {
+        width: 280px;
+        height: 100px;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: left;
+        padding: 15px;
+        box-shadow: 0px 5px 5px #888;
+        color:black;
+    }
+    .glovoimage {
+        width: 280px;
+        height: 200px;
+        box-shadow: 0px 5px 5px #888;
+    }
+    .uberimage {
+        width: 280px;
+        height: 200px;
+        box-shadow: 0px 5px 5px #888;
+    }
+    .buttondeliver {
+        font-size: 80%;
+        width: 100px;
+        box-shadow: 0px 2px 2px #888;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        color: white;
+        background-color: #09953e;
+        border: 0px;
+        margin-top: 10px;
+    }
+    .titlebuttons {
+        color:black;
+        font-size: 110%;
+        font-family: 'Gill Sans', sans-serif;
+    }
+    .textbuttons{
+        font-size: 80%;
+        color: black;
+        font-family: 'Rubik', sans-serif;
+    }
+    .secondtitlerightbody{
+        color: black;
+        font-size: 160%;
+        text-align: center;
+        font-family: 'Gill Sans', sans-serif;
+        padding-left: 0px;
+    }
+    .ubicacionespart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-left: 0px;
+    }
+    .firstubication{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 130%;
+        font-family: 'Gill Sans', sans-serif;
+        gap: 15px;
+    }
+    .secondubication{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 130%;
+        font-family: 'Gill Sans', sans-serif;
+        gap: 15px;
+    }
+    .thirdubication{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        font-size: 130%;
+        font-family: 'Gill Sans', sans-serif;
+        gap: 15px;
+    }
+    .firstpartrightbody{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .secondpartrightbody{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -4px;
+    }
+    .linepartfooter {
+        display: flex;
+        flex-direction: row;
+    }
+    .greenline{
+        width: 25%;
+        height: 10px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 10px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 10px;
+        background-color: #232325;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-left: 0px;
+    }
+    .firstpartfooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .titlefooter{
+        font-size: 95%;
+        color: white;
+        text-align: center;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .logofooter {
+        width: 35px;
+        height: 35px;
+    }
+    .iconosfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .iconossocial {
+        width: 15px;
+        height: 15px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 2px;
+    }
+    .secondpartfooter1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .secondpartfooter2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .secondtitlefooter{
+        font-size: 70%;
+        color: #09953e;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .secondtextfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .textfooter{
+        font-size: 60%;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}

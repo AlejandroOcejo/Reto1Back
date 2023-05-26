@@ -1,0 +1,867 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans-nova-cond-ultra-bold');
+@import url('https://fonts.cdnfonts.com/css/gill-sans?styles=17577');
+@import url('https://fonts.cdnfonts.com/css/rubik?styles=19495');
+
+html,
+body,
+main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    background-color: #232325;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.logoSpace {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+.headerRightPart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 40px;
+    gap: 20px;
+}
+
+.loginSpace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.loginButton {
+    border-radius: 10px;
+    background-color: #09953e;
+    width: 100px;
+    height: 35px;
+    font-size: x-large;
+    color: white;
+    border: 10px black;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    text-align: center;
+}
+
+.registerButton {
+    color: white;
+    font-size: 120%;
+    font-family: 'Rubik', sans-serif;
+}
+
+.Moka {
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 250%;
+    color: white;
+    font-weight: 900;
+}
+
+.movingText {
+    color: white;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    font-size: 150%;
+}
+.carrito{
+    width: 50px;
+    height:50px;
+}
+.carrito img{
+    width: 50px;
+    height:50px;
+}
+
+.sticky {
+
+    top: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.linepartfooter {
+    display: flex;
+    flex-direction: row;
+}
+.greenline{
+    width: 25%;
+    height: 25px;
+    background-color: #0faf4c;
+}
+.blackline{
+    width: 75%;
+    height: 25px;
+    background-color: #232325;
+}
+.fullpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+    padding: 40px;
+    background-color: #232325;
+}
+.firstpartfooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-left: 50px;
+}
+.firstpartfooter1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.titlefooter{
+    font-size: 270%;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.logofooter {
+    width: 90px;
+    height: 90px;
+}
+.iconosfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.iconossocial {
+    width: 45px;
+    height: 45px;
+}
+.secondpartfooter{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+    margin-top: 7px;
+}
+.secondpartfooter1{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondpartfooter2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.secondtitlefooter{
+    font-size: 220%;
+    color: #09953e;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.secondtextfooter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.textfooter{
+    font-size: 120%;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.tittle {
+    color: white;
+}
+
+.bodyfullpart {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+}
+.leftbody{
+    width: 40%;
+    height: 95%;
+}
+.leftimage{
+    width: 100%;
+}
+.rightbody{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.titlerightbody{
+    color: black;
+    font-size: 400%;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.mañanatardebuttons{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.mañanabutton{
+    font-size: 200%;
+    height: 60px;
+    width: 400px;
+    background-color: rgb(240, 236, 236);
+    border: 0px;
+    box-shadow: 0px 5px 5px #888;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    border-radius: 5px;
+}
+.tardebutton{
+    font-size: 200%;
+    height: 60px;
+    width: 400px;
+    background-color: rgb(240, 236, 236);
+    border: 0px;
+    box-shadow: 0px 5px 5px #888;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+    border-radius: 5px;
+}
+.mañanabutton:hover{
+    background-color: #09953e;
+    color: white;
+}
+.tardebutton:hover{
+    background-color: #09953e;
+    color: white;
+}
+.fechahorabox{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#datebox{
+    border: 2px black solid;
+    width: 400px;
+    height: 35px;
+    font-family: 'Rubik', sans-serif;
+    align-items: center;
+    padding: 10px;
+}
+#timebox{
+    border: 2px black solid;
+    width: 400px;
+    height: 35px;
+    font-family: 'Rubik', sans-serif;
+    align-items: center;
+    padding: 10px;
+}
+
+.calendarbutton{
+    border: 0px;
+    background-color: transparent;
+}
+.hourbutton{
+    border: 0px;
+    background-color: transparent;
+}
+.calendaricon{
+    height: 20px;
+    width: 20px;
+}
+.houricon{
+    height: 20px;
+    width: 20px;
+}
+.npersonasbox{
+    width: 830px;
+    height: 200px;
+    background-color: rgb(240, 236, 236);
+    font-size: 250%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 5px #888;
+    border-radius: 5px;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+.npersonasbuttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.button{
+    font-size: 100%;
+    width: 50px;
+    height: 55px;
+    border: 0px;
+    color: #09953e;
+    box-shadow: 0px 5px 5px #888;
+    background-color: white;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.button:hover{
+    background-color: #09953e;
+    color: white;
+}
+
+.datospersonalestitles{
+    display: flex;
+    flex-direction: row;
+    font-size: 140%;
+    gap: 130px;
+}
+.nombretitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+}
+.correotitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+}
+.telefonotitle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 90%;
+}
+.nombrebox{
+    font-size: 80%;
+    height: 30px;
+    width: 180px;
+    border: 2px black solid;
+    color: gray;
+    padding: 3px;
+}
+.correobox{
+    font-size: 80%;
+    height: 30px;
+    width: 210px;
+    border: 2px black solid;
+    color: gray;
+    padding: 3px;
+}
+.telefonobox{
+    font-size: 80%;
+    height: 30px;
+    width: 180px;
+    border: 2px black solid;
+    color: gray;
+    padding: 3px;
+}
+.textpartbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+#checkbox{
+    height: 17px;
+    width: 17px;
+}
+.textpart{
+    font-size: 120%;
+    font-family: 'Rubik', sans-serif;
+}
+.checkmark{
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 0,5px black solid;
+}
+.completarreservatext{
+    width: 400px;
+    background-color: #09953e;
+    color: white;
+    font-size: 200%;
+    box-shadow: 0px 5px 5px #888;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Gill Sans Nova Cond Ultra Bold';
+}
+@media only screen and (max-width: 1700px){
+    .leftbody{
+        width: 0%;
+        height: 0%;
+    }
+    .rightbody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+@media only screen and (max-width: 1325px){
+    .greenline{
+        width: 25%;
+        height: 20px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 20px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        padding: 20px;
+        background-color: #232325;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-left: 30px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        margin-top: 7px;
+    }
+}
+@media only screen and (max-width: 1305px){
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        padding: 20px;
+        background-color: #232325;
+    }
+}
+@media only screen and (max-width: 1532px){
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: -4px;
+    }
+    .linepartfooter {
+        display: flex;
+        flex-direction: row;
+    }
+    .greenline{
+        width: 25%;
+        height: 20px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 20px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        padding: 20px;
+        background-color: #232325;
+        justify-content: center;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        margin-left: 0px;
+    }
+    .firstpartfooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .titlefooter{
+        font-size: 220%;
+        color: white;
+        text-align: center;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .logofooter {
+        width: 75px;
+        height: 75px;
+    }
+    .iconosfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+    .iconossocial {
+        width: 35px;
+        height: 35px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 150px;
+        margin-top: 7px;
+    }
+    .secondpartfooter1{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondpartfooter2{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .secondtitlefooter{
+        font-size: 200%;
+        color: #09953e;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .secondtextfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .textfooter{
+        font-size: 100%;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+@media only screen and (max-width: 1066px){
+    .leftbody{
+        width: 0%;
+        height: 0%;
+    }
+    .rightbody{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        background-color: #232325;
+        justify-content: space-between;
+        padding: 15px;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    .Moka {
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        font-size: 150%;
+        color: white;
+    }
+    .movingText {
+        color: white;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        font-size: 0%;
+    }
+    .headerRightPart {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-right: 5px;
+        gap: 10px;
+    }
+    .loginSpace {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .loginButton {
+        border-radius: 10px;
+        background-color: #09953e;
+        width: 60px;
+        height: 30px;
+        font-size: 80%;
+        color: white;
+        border: 10px black;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        text-align: center;
+    }
+    .registerButton {
+        color: white;
+        font-size: 80%;
+        font-family: 'Rubik', sans-serif;
+    }
+    .carrito img{
+        width: 40px;
+        height: 40px;
+        align-content: center;
+    }
+    .titlerightbody{
+        color: black;
+        font-size: 230%;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        text-align: center;
+    }
+    .mañanatardebuttons{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .mañanabutton{
+        font-size: 160%;
+        height: 40px;
+        width: 170px;
+        background-color: rgb(240, 236, 236);
+        border: 0px;
+        box-shadow: 0px 5px 5px #888;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        border-radius: 5px;
+    }
+    .tardebutton{
+        font-size: 160%;
+        height: 40px;
+        width: 170px;
+        background-color: rgb(240, 236, 236);
+        border: 0px;
+        box-shadow: 0px 5px 5px #888;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        border-radius: 5px;
+    }
+    #datebox{
+        border: 2px black solid;
+        width: 170px;
+        height: 30px;
+        font-family: 'Rubik', sans-serif;
+        align-items: center;
+        padding: 10px;
+    }
+    #timebox{
+        border: 2px black solid;
+        width: 170px;
+        height: 30px;
+        font-family: 'Rubik', sans-serif;
+        align-items: center;
+        padding: 10px;
+    }
+    .fechahorabox{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .npersonasbox{
+        width: 350px;
+        height: 130px;
+        background-color: rgb(240, 236, 236);
+        font-size: 180%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0px 5px 5px #888;
+        border-radius: 5px;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .npersonasbuttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 13px;
+    }
+    .button{
+        font-size: 65%;
+        width: 30px;
+        height: 35px;
+        border: 0px;
+        color: #09953e;
+        box-shadow: 0px 5px 5px #888;
+        background-color: white;
+        font-family: 'Gill Sans', sans-serif;
+    }
+    .datospersonalestitles{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .nombretitle{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 55%;
+    }
+    .correotitle{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 55%;
+    }
+    .telefonotitle{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 55%;
+    }
+    .nombrebox{
+        height: 25px;
+        width: 110px;
+        border: 2px black solid;
+        color: gray;
+        padding: 3px;
+    }
+    .correobox{
+        height: 25px;
+        width: 110px;
+        border: 2px black solid;
+        color: gray;
+        padding: 3px;
+    }
+    .telefonobox{
+        height: 25px;
+        width: 110px;
+        border: 2px black solid;
+        color: gray;
+        padding: 3px;
+    }
+    .textpart{
+        font-size: 90%;
+        font-family: 'Rubik', sans-serif;
+    }
+    .completarreservatext{
+        width: 300px;
+        background-color: #09953e;
+        color: white;
+        font-size: 150%;
+        box-shadow: 0px 5px 5px #888;
+        text-align: center;
+        border-radius: 5px;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .linepartfooter {
+        display: flex;
+        flex-direction: row;
+    }
+    .greenline{
+        width: 25%;
+        height: 10px;
+        background-color: #0faf4c;
+    }
+    .blackline{
+        width: 75%;
+        height: 10px;
+        background-color: #232325;
+    }
+    .fullpartfooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 10px;
+        background-color: #232325;
+    }
+    .firstpartfooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-left: 0px;
+    }
+    .firstpartfooter1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .titlefooter{
+        font-size: 95%;
+        color: white;
+        text-align: center;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .logofooter {
+        width: 35px;
+        height: 35px;
+    }
+    .iconosfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .iconossocial {
+        width: 15px;
+        height: 15px;
+    }
+    .secondpartfooter{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 2px;
+    }
+    .secondpartfooter1{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .secondpartfooter2{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .secondtitlefooter{
+        font-size: 70%;
+        color: #09953e;
+        font-family: 'Gill Sans Nova Cond Ultra Bold';
+    }
+    .secondtextfooter{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .textfooter{
+        font-size: 60%;
+        color: white;
+        font-family: 'Rubik', sans-serif;
+    }
+}

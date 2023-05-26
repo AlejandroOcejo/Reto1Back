@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pageemployees.css">
+    <link rel="icon" type="image/x-icon" href="logorecortadoverde.png">
+</head>
+
+<body>
+    <div class="header" id="myHeader">
+        <div class="logoSpace">
+            <img src="logorecortadoverde.png" class="logo">
+            <div class="Moka"><a href="file:///C:/Users/S2-PC00/Desktop/pagina%20principal/mainpage/index.html" class="tittle">MOKA COFFEE</a></div>
+        </div>
+        <div class="movingText">
+            <marquee>Try our new coffees with a discount until next Wednesday</marquee>
+        </div>
+        <div class="headerRightPart">
+            <div class="carrito">
+                <img src="carrito-de-compras.png">
+            </div>
+            <div class="loginSpace">
+                <a href="file:///C:/Users/S2-PC00/Desktop/pagina%20login/paginalogin.html" target="_blank" class="loginButton">
+                    Log-in
+                </a>
+                <a href="file:///C:/Users/S2-PC00/Desktop/pagina%20register/pagina%20register.html" target="_blank" class="registerButton">
+                    Register
+                </a>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () { myFunction() };
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+    </div>
+    <div class="body">
+        <div class="bodyfirstpart">
+            <div class="titlefirstpart">
+                WORKS COUNCIL
+            </div>
+            <div class="fotospart">
+                <div class="firstfoto">
+                    <img class="fotoalejandro" src="fotoperfilalejandro.jpg">
+                    <div class="alejandrotext">
+                        <div class="alejandrotext1">Alejandro Ocejo</div>
+                        <div class="alejandrotext2">PRESIDENT</div>
+                    </div>
+                </div>
+                <div class="secondfoto">
+                    <img class="fotoangel" src="fotoperfilAngel.JPG">
+                    <div class="angeltext">
+                        <div class="angeltext1">Ángel Adán</div>
+                        <div class="angeltext2">VICE PRESIDENT</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bodysecondpart">
+            <a href="Oferta de empleo en Ingles.pdf" target="_blank" class="ofertaempleobox">
+                <img class="iconoofertaempleo" src="ofertaempleoicono.png">
+                <div class="ofertaempleotext">JOB OFFER</div>
+            </a>
+            <a href="Convenios Colectivos.pdf" target="_blank" class="convenioscolectivosbox">
+                <img class="iconoconvenioscolectivos" src="conveniocolectivo.png">
+                <div class="convenioscolectivostext">COLLECTIVE AGREEMENTS</div>
+            </a>
+            <a href="EVALUACION DE RIESGOS LABORALES.docx" class="evaluaciónriesgosbox">
+                <img class="iconoevaluacionriesgos" src="riesgoslaborales.png">
+                <div class="evaluacionriesgostext">LABOR RISKS</div>
+            </a>
+            <a href="PWP REPRESENTACION RIESGOS LABORALES.pptx" class="videoriesgosbox">
+                <img class="iconovideoriesgos" src="powerpoint.png">
+                <div class="videoriesgostext">LABOR RISKS PWP</div>
+            </a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="linepartfooter">
+            <div class="greenline"></div>
+            <div class="blackline"></div>
+        </div>
+        <div class="fullpartfooter">
+            <div class="firstpartfooter">
+                <div class="firstpartfooter1">
+                    <div class="titlefooter">
+                        MOKA COFFEE
+                    </div>
+                    <img class="logofooter" src="logorecortadoverde.png">
+                </div>
+                <div class="iconosfooter">
+                    <img src="instagram.png" class="iconossocial">
+                    <img src="signo-de-twitter.png" class="iconossocial">
+                    <img src="facebook.png" class="iconossocial">
+                    <img src="youtube.png" class="iconossocial">
+                </div>
+            </div>
+            <div class="secondpartfooter">
+                <div class="secondpartfooter1">
+                    <div class="secondtitlefooter">
+                        ABOUT US
+                    </div>
+                    <div class="secondtextfooter">
+                        <a href="MOKA COFFEE.pdf" target="_blank" class="textfooter">¿What we are?</a>
+                        <a href="RESPONSABILIDADES DE MOKA COFFEE.docx" class="textfooter">Responsability</a>
+                        <a href="CONTACTO MOKA COFFEE.pdf" target="_blank" class="textfooter">Contact</a>
+                    </div>
+                </div>
+                <div class="secondpartfooter2">
+                    <div class="secondtitlefooter">
+                        THE COMPANY
+                    </div>
+                    <div class="secondtextfooter">
+                        <a href="http://localhost:8080/cafeteriaFinal/pagina empleados/pageemployees.html" class="textfooter">Work with us</a>
+                        <a href="Politica de Cookies.docx" class="textfooter">Cookies policy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Legal warning</a>
+                        <a href="PUNTOS A DESTACAR DE LOS CONVENIOS COLECTIVOS.docx" class="textfooter">Important points of the collective agreement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

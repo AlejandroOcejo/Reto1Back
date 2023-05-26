@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="indexcss.css">
+        <link rel="icon" type="image/x-icon" href="logorecortadoverde.png">
+        <script src="indexjs.js"></script>
+    </head>
+
+    <body>
+        <div class="header" id="myHeader">
+            <div class="logoSpace">
+                <img src="logorecortadoverde.png" class="logo">
+                <div class="Moka"><b class="tittle">MOKA COFFEE</b></div>
+            </div>
+            <div class="movingText">
+                <marquee>Try our new coffees with a discount until next Wednesday</marquee>
+            </div>
+            <div class="headerRightPart">
+                <div class="carrito">
+                    <img src="carrito-de-compras.png">
+                </div>
+                <div class="loginSpace">
+                    <a id="loginButton" href="http://localhost:8080/cafeteriaFinal/login/paginalogin.html" class="loginButton">
+                        Log-in
+                    </a>
+                    <a id="registerButton" href="http://localhost:8080/cafeteriaFinal/register/pagina%20register.html" class="registerButton">
+                        Register
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+            window.onscroll = function () {
+                myFunction()
+            };
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+    </div>
+    <div class="body">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="textimagenbody1">
+                    <div class="textimagenbody1div">COOL OFF WITH HIM<br>NEW<br></div>
+                    <div class="text2imagenbody1div">GRANITA OF COFFEE<br></div>
+                    <a class="buttonimagenbody1" href="http://localhost:8080/cafeteriaFinal/productspage/page2.html">DISCOVER MORE</a>
+                </div>
+                <img src="imgbody1b.png" class="imagenbody">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="textimagenbody2">
+                    <div class="textimagenbody2div">SUMMER IS COMING AND WITH<br>IT OUR NEW<br></div>
+                    <div class="text2imagenbody2div">ICE COFFEE</div>
+                    <a class="buttonimagenbody1" href="http://localhost:8080/cafeteriaFinal/productspage/page2.html">DISCOVER MORE</a>
+                </div>
+                <img src="imgbody2e.png" class="imagenbody">
+            </div>
+            <div class="mySlides fade">
+                <div class="textimagenbody3">
+                    <div class="textimagenbody3div">DISCOVER OUR</div>
+                    <div class="text2imagenbody3div">NATURAL SMOOTHIES</div>
+                    <a class="buttonimagenbody1" href="http://localhost:8080/cafeteriaFinal/productspage/page2.html">DISCOVER MORE</a>
+                </div>
+                <img src="imgbody3.png" class="imagenbody">
+            </div>
+        </div>
+        <div class="bodymiddlepart">
+            <div class="leftside">
+                <img class="imgbodyleftside" src="imgcaf.PNG">
+                <div class="leftsidetext">
+                    <div class="leftsidemaintext">COFFEES </div>
+                    <div class="leftsidebodytext">Alone, cut or with milk, here<br>you will find coffees for all
+                        tastes, <br>as well as a wide variety of innovative<br> coffees....
+                    </div>
+                    <div class="leftbar">|</div>
+                </div>
+            </div>
+            <div class="rightside">
+                <div class="rightsidetext">
+                    <div class="rightbar">|</div>
+                    <div class="rightsidemaintext">BREAKFASTS </div>
+                    <div class="rightsidebodytext">Are you more of sweet or salty for breakfast?
+                        <br>Here we bring you the best breakfasts for
+                        <br>for all tastes...
+                    </div>
+                </div>
+                <img class="imgbodyrightside" src="imgdesf2.PNG">
+            </div>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 10000);
+                }
+            </script>
+        </div>
+        <div class="bodybottompart">
+            <div class="delreserveoption">
+                <a href="http://localhost:8080/cafeteriaFinal/reserve/pagina4.html" class="reserveoption">
+                    <img class="iconoreserve" src="reserva-mesas.png" alt="">
+                    <div class="reservetext">Reserve your table</div>
+                </a>
+                <a href="http://localhost:8080/cafeteriaFinal/pagina3/pagina3.html" class="deliveryoption">
+                    <img class="iconodelivery" src="icono-delivery.png">
+                    <div class="deliverytext">Delivery service</div>
+                </a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="linepartfooter">
+                <div class="greenline"></div>
+                <div class="blackline"></div>
+            </div>
+            <div class="fullpartfooter">
+                <div class="firstpartfooter">
+                    <div class="firstpartfooter1">
+                        <div class="titlefooter">
+                            MOKA COFFEE
+                        </div>
+                        <img class="logofooter" src="logorecortadoverde.png">
+                    </div>
+                    <div class="iconosfooter">
+                        <img src="instagram.png" class="iconossocial">
+                        <img src="signo-de-twitter.png" class="iconossocial">
+                        <img src="facebook.png" class="iconossocial">
+                        <img src="youtube.png" class="iconossocial">
+                    </div>
+                </div>
+                <div class="secondpartfooter">
+                    <div class="secondpartfooter1">
+                        <div class="secondtitlefooter">
+                            ABOUT US
+                        </div>
+                        <div class="secondtextfooter">
+                            <a href="MOKA COFFEE.pdf" target="_blank" class="textfooter">¿What we are?</a>
+                            <a href="RESPONSABILIDADES DE MOKA COFFEE.docx" class="textfooter">Responsability</a>
+                            <a href="CONTACTO MOKA COFFEE.pdf" target="_blank" class="textfooter">Contact</a>
+                        </div>
+                    </div>
+                    <div class="secondpartfooter2">
+                        <div class="secondtitlefooter">
+                            THE COMPANY
+                        </div>
+                        <div class="secondtextfooter">
+                            <a href="http://localhost:8080/cafeteriaFinal/pagina empleados/pageemployees.html" class="textfooter">Work with us</a>
+                            <a href="Politica de Cookies.docx" class="textfooter">Cookies policy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Legal warning</a>
+                            <a href="PUNTOS A DESTACAR DE LOS CONVENIOS COLECTIVOS.docx" class="textfooter">Important points of the collective agreement</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
