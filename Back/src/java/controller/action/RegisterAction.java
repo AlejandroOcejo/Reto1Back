@@ -5,18 +5,24 @@
  */
 package controller.action;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.Register;
 import model.DAO;
 import model.Login;
+import objects.Order;
+import model.MotorOracle;
 
 /**
  *
  * @author S2-PC109
  */
 public class RegisterAction implements IAction {
+
+    private MotorOracle motor;
 
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
@@ -31,6 +37,7 @@ public class RegisterAction implements IAction {
             case "LOGIN":
                 cadDestino = loginUser(request, response);
                 break;
+
         }
         return cadDestino;
     }
@@ -64,7 +71,7 @@ public class RegisterAction implements IAction {
 
         logUser.loginUser(EMAIL, PASSWORD);
 
-       String jsonResponse = "{\"accountLogged\":" + logUser.isUserLogged() + ", \"isEmployee\":" + logUser.isEmployee() + "}";
+        String jsonResponse = "{\"accountLogged\":" + logUser.isUserLogged() + ", \"isEmployee\":" + logUser.isEmployee() + "}";
 
         return jsonResponse;
 

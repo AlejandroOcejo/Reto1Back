@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="paginacarrito.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="paginacarrito.js"></script>
+
+    </head>
+
+    <body>
+        <div class="header" id="myHeader">
+            <a href="http://localhost:8080/cafeteriaFinal/mainpage/index.html" class="logoSpace">
+                <img src="logorecortadoverde.png" class="logo">
+                <div class="Moka"><b class="tittle">MOKA COFFEE</b></div>
+            </a>
+            <div class="movingText">
+                <marquee>Try our new coffees with a discount until next Wednesday</marquee>
+            </div>
+            <div class="headerRightPart">
+                <div class="lupa">
+                    <a href="http://localhost:8080/cafeteriaFinal/cart/paginacarrito.html"><img src="carrito-de-compras.png"></a>
+                </div>
+                <div class="loginSpace">
+                    <button class="loginButton">Log-in</button>
+                    <div class="registerButton">Register</div>
+                </div>
+            </div>
+            <script>
+                window.onscroll = function () {
+                    myFunction()
+                };
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+            </script>
+
+
+        </div>
+        <div class="bodyinside">
+            <div class="leftside">
+                <div class="productsDisplay">
+
+                </div>
+                <div class="buttons">
+                    <button class="buttonpay" onclick="sendOrderToServer()">Pay
+                    </button>
+                    <button class="buttondelete">Delete All
+                    </button>
+                </div>
+            </div>
+            <div class="photo"> 
+                <img class="imgbody1" src="coffee-shop.jpg">
+            </div>
+        </div>
+
+    </body>
+
+</html>

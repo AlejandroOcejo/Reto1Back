@@ -12,6 +12,11 @@ import model.Login;
 import model.Register;
 import model.*;
 import controller.action.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import objects.Order;
+import model.MotorOracle;
 
 @WebServlet(name = "Controller", urlPatterns = {"/Controller"})
 public class Controller extends HttpServlet {
@@ -45,6 +50,13 @@ public class Controller extends HttpServlet {
                 out.print(strResp);
 
                 break;
+
+            case "SEND_ORDER":
+                strResp = new ProductAction().execute(request, response);
+                out.print(strResp);
+
+                break;
+
         }
     }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

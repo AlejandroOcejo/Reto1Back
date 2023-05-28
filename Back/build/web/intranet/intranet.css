@@ -3,78 +3,82 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  header {
+}
+
+header {
     background-color: #333;
     color: #fff;
     padding: 10px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
-  
-  nav ul li {
+}
+
+nav ul li {
     display: inline;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     display: block;
     padding: 10px;
     text-decoration: none;
     color: #333;
     background-color: #f0f0f0;
-  }
-  
-  nav ul li a:hover {
+}
+
+nav ul li a:hover {
     background-color: #ddd;
-  }
-  
-  .section {
+}
+
+.section {
     margin: 20px;
-  }
-  
-  /* Estilos específicos para cada sección */
-  #create-user {
+}
+
+/* Estilos específicos para cada sección */
+#create-user {
     background-color: #f0f0f0;
-  }
-  
-  #create-user h2 {
+}
+
+#create-user h2 {
     color: #333;
-  }
-  
-  #create-product {
+}
+
+#create-product {
     background-color: #f0f0f0;
-  }
-  
-  #create-product h2 {
+}
+
+#create-product h2 {
     color: #333;
-  }
-  
-  #delete-user {
+}
+
+#delete-user {
     background-color: #f0f0f0;
-  }
-  
-  #delete-user h2 {
+}
+
+#delete-user h2 {
     color: #333;
-  }
-  
-  #delete-product {
+}
+
+#delete-product {
     background-color: #f0f0f0;
-  }
-  
-  #delete-product h2 {
+}
+
+#delete-product h2 {
     color: #333;
-  }
-  
-  #create-category {
+}
+
+#create-category {
     background-color: #f0f0f0;
-  }
-  
-  #create-category h2 {
+}
+
+#create-category h2 {
     color: #333;
-  }
-  
+}
+
+a{
+    text-decoration: none;
+    color:black
+}

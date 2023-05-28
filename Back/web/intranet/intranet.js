@@ -106,14 +106,11 @@ function sendRequestToServer() {
         dataType: 'json',
         async: false,
         success: function (response) {
-            // Acceder al Array de empleados
             var employeesList = response;
 
-            // Crear la tabla HTML
             var html = "<table>";
             html += "<tr><th>Employee ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Store ID</th></tr>";
 
-            // Recorrer el Array y agregar los datos a la tabla
             for (var i = 0; i < employeesList.length; i++) {
                 var employee = employeesList[i];
                 html += "<tr>";
@@ -128,7 +125,6 @@ function sendRequestToServer() {
 
             html += "</table>";
 
-            // Actualizar un elemento en tu página HTML con la tabla generada
             $("#employee-list").html(html);
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
@@ -217,7 +213,6 @@ function sendProductToServer() {
                 alert("Product created successfully!");
                 //window.location.href = "http://localhost:8080/cafeteriaFinal/login/paginalogin.html";
             } else {
-                // Account creation failed, display error message or take other action
                 alert("Failed to create Product. Please try again.");
             }
         },
@@ -242,14 +237,11 @@ function sendProductRequestToServer() {
         dataType: 'json',
         async: false,
         success: function (response) {
-            // Acceder al Array de empleados
             var productsList = response;
 
-            // Crear la tabla HTML
             var html = "<table>";
             html += "<tr><th>Product ID</th><th>Product Name</th><th>Category ID</th><th>Category Name</th><th>Price</th><th>Product Url</th></tr>";
 
-            // Recorrer el Array y agregar los datos a la tabla
             for (var i = 0; i < productsList.length; i++) {
                 var product = productsList[i];
                 html += "<tr>";
@@ -265,7 +257,6 @@ function sendProductRequestToServer() {
 
             html += "</table>";
 
-            // Actualizar un elemento en tu página HTML con la tabla generada
             $("#product-list").html(html);
 
         },
@@ -319,5 +310,5 @@ function sendDeleteProductToServer(productID) {
             alert("Error: " + errorThrown);
         }
     });
-    
-} 
+
+}

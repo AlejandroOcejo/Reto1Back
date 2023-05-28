@@ -43,7 +43,7 @@ public class CreateCategory {
 
         id++;
 
-        sql = "INSERT INTO CATEGORIES VALUES (" + "'" + categoryName+ "'" + "," + "'" + id + "'" + ")";
+        sql = "INSERT INTO CATEGORIES VALUES (" + "'" + categoryName + "'" + "," + "'" + id + "'" + ")";
 
         motor.executeQuery(sql);
 

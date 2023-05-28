@@ -31,7 +31,6 @@ function sendProductRequestToServer() {
 
 function generateProducts(productsList) {
     var productDiv = document.querySelector('.productlist');
-
     var productsByCategory = {};
 
     for (var i = 0; i < productsList.length; i++) {
@@ -67,16 +66,20 @@ function generateProducts(productsList) {
                 container_productos.innerHTML += `
           <div class="imgdiv1">
             <div class="textrow1">
-              <button class="addbutton">${product['productName']} ${product['price']}€</button>
+              <button class="addbutton" data-product="${product['productName']}" data-price="${product['price']}">${product['productName']} ${product['price']}€</button>
             </div>
             <img class="imgrow1" src="${product['productUrl']}">
           </div>`;
             }
 
             categoryIndex++;
-
-
         }
+    }
+
+    // Add click event listener to the buttons
+    var buttons = document.getElementsByClassName('addbutton');
+    for (var k = 0; k < buttons.length; k++) {
+        buttons[k].addEventListener('click', handleAddToCart);
     }
     var userEmail = sessionStorage.getItem('email');
 
@@ -113,5 +116,15 @@ function updateButtons() {
         }
     }
 }
+function handleAddToCart(event) {
+    var button = event.target;
+    var productName = button.getAttribute('data-product');
+    var price = button.getAttribute('data-price');
 
-window.addEventListener('load', updateButtons);
+    var sessionCartItems = JSON.parse(sessionStorage.getItem('sessionCartItems')) || [];
+    sessionCartItems.push({productName: productName, price: price});
+    sessionStorage.setItem('sessionCartItems', JSON.stringify(sessionCartItems));
+
+    console.log('Product:', productName);
+    console.log('Price:', price);
+}
