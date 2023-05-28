@@ -27,7 +27,7 @@ public class RegisterAction implements IAction {
             case "REGISTER":
                 cadDestino = registerUser(request, response);
                 break;
-            
+
             case "LOGIN":
                 cadDestino = loginUser(request, response);
                 break;
@@ -43,11 +43,11 @@ public class RegisterAction implements IAction {
         String MAIL = request.getParameter("MAIL");
         String PHONE = request.getParameter("PHONE");
         String PASS = request.getParameter("PASS");
-        
-        if("".equals(NAME) || "".equals(SURNAME) || "".equals(MAIL) || "".equals(PHONE) || "".equals(PASS)){
+
+        if ("".equals(NAME) || "".equals(SURNAME) || "".equals(MAIL) || "".equals(PHONE) || "".equals(PASS)) {
             String jsonResponse = "{\"ACCOUNTFAILED\":" + regUser.isAccountCreated() + "}";
             return jsonResponse;
-        } 
+        }
         regUser.registerUser(NAME, SURNAME, MAIL, PHONE, PASS);
 
         String jsonResponse = "{\"accountCreated\":" + regUser.isAccountCreated() + "}";
@@ -55,19 +55,19 @@ public class RegisterAction implements IAction {
         return jsonResponse;
 
     }
-    
+
     private String loginUser(HttpServletRequest request, HttpServletResponse response) {
         String strRet = "{\"RESULT\":\"OK\"}";
         Login logUser = new Login();
         String EMAIL = request.getParameter("EMAIL");
         String PASSWORD = request.getParameter("PASS");
-            
+
         logUser.loginUser(EMAIL, PASSWORD);
 
-        String jsonResponse = "{\"accountLogged\":" + logUser.isUserLogged() + "}";
+       String jsonResponse = "{\"accountLogged\":" + logUser.isUserLogged() + ", \"isEmployee\":" + logUser.isEmployee() + "}";
 
         return jsonResponse;
 
     }
-    
+
 }

@@ -18,6 +18,10 @@ function sendDataToServer() {
         dataType: 'json',
         async: false,
         success: function (response) {
+            if (response.isEmployee){
+                isEmployee = true;
+                window.location.href = "http://localhost:8080/cafeteriaFinal/intranet/intranet.html";
+            }
             if (response.accountLogged) {
                 accountCreated = true;
                 alert("Account logged successfully!");

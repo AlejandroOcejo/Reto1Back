@@ -108,7 +108,7 @@ function updateButtons() {
             loginButton.style.order = '1';
             loginButton.addEventListener('click', function () {
                 sessionStorage.removeItem('email');
-                location.reload(); // Reload the page
+                location.reload();
             });
         }
     }
