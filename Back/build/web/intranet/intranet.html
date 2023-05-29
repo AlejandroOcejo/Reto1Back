@@ -23,6 +23,7 @@
                 <li><a href="#delete-user" onclick="showSection('delete-user')">Delete User</a></li>
                 <li><a href="#delete-product" onclick="showSection('delete-product')">Delete product</a></li>
                 <li><a href="#create-category" onclick="showSection('create-category')">Create category</a></li>
+                <li><a href="#delete-order" onclick="showSection('delete-order')">Delete order</a></li>
             </ul>
         </nav>
 
@@ -86,12 +87,18 @@
             <div id="product-list"></div>
             <div id="delete-product-result"></div>
         </section>
-        
+
         <section id="delete-user" class="section" style="display: none;">
             <h2>Delete User</h2>
             <button onclick="sendRequestToServer()">Refresh</button>
             <div id="employee-list"></div>
             <div id="delete-user-result"></div>
+        </section>
+        <section id="delete-order" class="section" style="display: none;">
+            <h2>Orders</h2>
+            <button onclick="sendOrderRequestToServer()">Refresh</button>
+            <div id="order-list"></div>
+            <div id="delete-order-list"></div>
         </section>
 
     </body>

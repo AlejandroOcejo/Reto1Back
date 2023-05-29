@@ -148,7 +148,7 @@ window.addEventListener('DOMContentLoaded', displayCartItems);
 function sendOrderToServer() {
     var sessionCartItems = JSON.parse(sessionStorage.getItem('sessionCartItems'));
     var email = sessionStorage.getItem('email');
-    var quantity;
+    var quantity = 0;
     // Prepare the data to be sent
     var dataWeb = new URLSearchParams();
     dataWeb.append("EMAIL", email);
@@ -159,7 +159,7 @@ function sendOrderToServer() {
         var productName = cartItem.productName;
         quantity++;
 
-        dataWeb.append('productName[]', productName);
+        dataWeb.append('productName', productName);
         dataWeb.append('quantity', quantity);
     }
 
@@ -169,7 +169,8 @@ function sendOrderToServer() {
         data: {
             ACTION: 'SEND_ORDER',
             SUBACTION: 'SEND_ORDER',
-            PRODUCTNAME: 'productNames[]',
+            PRODUCTNAME: productName,
+            QUANTITY: quantity,
             EMAIL: email
         },
 
@@ -188,3 +189,29 @@ function sendOrderToServer() {
     }
     );
 }
+
+function updateButtons() {
+    var userEmail = sessionStorage.getItem('email');
+
+    if (userEmail) {
+        var registerButton = document.getElementById('registerButton');
+        if (registerButton) {
+            registerButton.innerHTML = 'Welcome, ' + userEmail;
+            registerButton.href = '#';
+            registerButton.style.order = '2';
+        }
+
+        var loginButton = document.getElementById('loginButton');
+        if (loginButton) {
+            loginButton.innerHTML = 'Logout';
+            loginButton.href = '#';
+            loginButton.style.order = '1';
+            loginButton.addEventListener('click', function () {
+                sessionStorage.removeItem('email');
+                location.reload(); // Reload the page
+            });
+        }
+    }
+}
+
+window.addEventListener('load', updateButtons);

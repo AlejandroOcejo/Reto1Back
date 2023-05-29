@@ -16,6 +16,7 @@ import model.CreateCategory;
 import model.CreateProduct;
 import model.DeleteProduct;
 import model.DeleteUser;
+import model.RefreshOrder;
 import model.RefreshProducts;
 import model.RefreshUsers;
 import objects.Employees;
@@ -61,6 +62,9 @@ public class IntranetActionManager implements IAction {
                 deleteProduct(request, response);
                 cadDestino = refreshProduct(request, response);
                 break;
+            case "REFRESHORDER":
+                //refreshOrder(request, response);
+                cadDestino = refreshOrder(request, response);
         }
         return cadDestino;
     }
@@ -163,6 +167,22 @@ public class IntranetActionManager implements IAction {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
+        return strRet;
+
+    }
+
+    public String refreshOrder(HttpServletRequest request, HttpServletResponse response) {
+        String strRet = "";
+        RefreshOrder refOrder = new RefreshOrder();
+        String json = refOrder.RefreshOrder();
+        try {
+            response.setContentType("application/json");
+            response.setCharacterEncoding("UTF-8");
+
+            response.getWriter().write(json);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return strRet;
 
     }

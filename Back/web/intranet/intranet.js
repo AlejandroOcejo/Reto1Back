@@ -312,3 +312,43 @@ function sendDeleteProductToServer(productID) {
     });
 
 }
+
+function sendOrderRequestToServer() {
+    var dataWeb = new URLSearchParams();
+    var accountCreated = false;
+    dataWeb.append("ACTION", "INTRANET");
+
+    $.ajax({
+        url: 'http://localhost:8080/cafeteriaFinal/Controller',
+        data: {
+            ACTION: 'INTRANET',
+            SUB_ACTION: 'REFRESHORDER'
+        },
+        dataType: 'json',
+        async: false,
+        success: function (response) {
+            var orderList = response;
+
+            var html = "<table>";
+            html += "<tr><th>Order id</th><th>Store id</th><th>Client id</th>";
+
+            for (var i = 0; i < orderList.length; i++) {
+                var order = orderList[i];
+                html += "<tr>";
+                html += "<td>" + order.Order_id + "</td>";
+                html += "<td>" + order.Store_id + "</td>";
+                html += "<td>" + order.Client_id + "</td>";
+                html += "<td><button onclick='sendDeleteToServer(" + order.Order_id + ")' class='delete-button' data-employee-id='" + order.Order_id + "'>Delete</button></td>";
+                html += "</tr>";
+            }
+
+            html += "</table>";
+
+            $("#delete-order").html(html);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Status: " + textStatus);
+            alert("Error: " + errorThrown);
+        }
+    });
+}
