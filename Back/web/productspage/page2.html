@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="page2.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-    </head>
-
-    <div class="body">
-
-
-        <div class="header" id="myHeader">
-            <a href="http://localhost:8080/cafeteriaFinal/mainpage/index.html" class="logoSpace">
-                <img src="logorecortadoverde.png" class="logo">
-                <div class="Moka"><b class="tittle">MOKA COFFEE</b></div>
+<div class="body">
+    <div class="header" id="myHeader">
+        <a href="http://localhost:8080/cafeteriaFinal/mainpage/index.html" class="logoSpace">
+            <img src="logorecortadoverde.png" class="logo">
+            <div class="Moka"><b class="tittle">MOKA COFFEE</b></div>
+        </a>
+        <div class="movingText">
+            <input id="emailInput"></input> <button class="submitEmail" onclick="submitEmail()">Submit</button>
+        </div>
+        <div class="headerRightPart">
+            <a href="http://localhost:8080/cafeteriaFinal/cart/paginacarrito.html" class="carrito">
+                <img src="carrito-de-compras.png">
             </a>
-            <div class="movingText">
-                <marquee>Try our new coffees with a discount until next Wednesday</marquee>
-            </div>
-            <div class="headerRightPart">
-                <a href="http://localhost:8080/cafeteriaFinal/cart/paginacarrito.html" class="carrito">
-                    <img src="carrito-de-compras.png">
+            <div class="loginSpace">
+                <a id="loginButton" href="http://localhost:8080/cafeteriaFinal/login/paginalogin.html"
+                    class="loginButton">
+                    Log-in
                 </a>
-                <div class="loginSpace">
-                    <a id="loginButton" href="http://localhost:8080/cafeteriaFinal/login/paginalogin.html" class="loginButton">
-                        Log-in
-                    </a>
-                    <a id="registerButton" href="http://localhost:8080/cafeteriaFinal/register/pagina%20register.html" class="registerButton">
-                        Register
-                    </a>
-                </div>
+                <a id="registerButton" href="http://localhost:8080/cafeteriaFinal/register/pagina%20register.html"
+                    class="registerButton">
+                    Register
+                </a>
             </div>
-
         </div>
-        <div class="productlist">
-
-
-        </div>
-        <div class="footer">
-            <div class="linepartfooter">
-                <div class="greenline"></div>
-                <div class="blackline"></div>
-            </div>
-            <div class="fullpartfooter">
-                <div class="firstpartfooter">
-                    <div class="firstpartfooter1">
-                        <div class="titlefooter">
-                            MOKA COFFEE
-                        </div>
-                        <img class="logofooter" src="logorecortadoverde.png">
-                    </div>
-                    <div class="iconosfooter">
-                        <img src="instagram.png" class="iconossocial">
-                        <img src="signo-de-twitter.png" class="iconossocial">
-                        <img src="facebook.png" class="iconossocial">
-                        <img src="youtube.png" class="iconossocial">
+    </div>
+    <div class="productlist">
+        <div class="productFull">
+            <div class="product">
+                <div class="backgroundTop">
+                    <div class="productTop">
+                        <div class="likeImg"><img class="likeProduct" src="like.png"></div>
+                        <div class="divImg"><img class="imgProduct" src="SBX-UK-MOP-CaramelFrappuccino.jpg.jpg"></div>
                     </div>
                 </div>
-                <div class="secondpartfooter">
-                    <div class="secondpartfooter1">
-                        <div class="secondtitlefooter">
-                            ABOUT US
+                <div class="backgroundBottom">
+                    <div class="productBottom">
+                        <div class="productText">
+                            <div class="ProductNameText">Café expresso</div>
+                            <div class="ProductDescriptionText">Bebidas con los mejores granos de café 100% arábica,
+                                cuidadosamente seleccionados y tostados al más puro estilo Starbucks.</div>
                         </div>
-                        <div class="secondtextfooter">
-                            <a href="MOKA COFFEE.pdf" target="_blank" class="textfooter">¿Who are we?</a>
-                            <a href="RESPONSABILIDADES DE MOKA COFFEE.docx" class="textfooter">Responsability</a>
-                            <a href="CONTACTO MOKA COFFEE.pdf" target="_blank" class="textfooter">Contact</a>
-                        </div>
+                        <button class="buttonAdd"> Añadir</button>
                     </div>
-                    <div class="secondpartfooter2">
-                        <div class="secondtitlefooter">
-                            THE COMPANY
+                </div>
+            </div>
+            <div class="product">
+                <div class="backgroundTop">
+                    <div class="productTop">
+                        <div class="likeImg"><img class="likeProduct" src="like.png"></div>
+                        <div class="divImg"><img class="imgProduct" src="SBX-UK-MOP-CaramelFrappuccino.jpg.jpg"></div>
+                    </div>
+                </div>
+                <div class="backgroundBottom">
+                    <div class="productBottom">
+                        <div class="productText">
+                            <div class="ProductNameText">Café expresso</div>
+                            <div class="ProductDescriptionText">Bebidas con los mejores granos de café 100% arábica,
+                                cuidadosamente seleccionados y tostados al más puro estilo Starbucks.</div>
                         </div>
-                        <div class="secondtextfooter">
-                            <a href="http://localhost:8080/cafeteriaFinal/pagina empleados/pageemployees.html" class="textfooter">Work with us</a>
-                            <a href="Politica de Cookies.docx" class="textfooter">Cookies policy&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Legal warning</a>
-                            <a href="PUNTOS A DESTACAR DE LOS CONVENIOS COLECTIVOS.docx" class="textfooter">Important points of the collective agreement</a>
+                        <button class="buttonAdd"> Añadir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="backgroundTop">
+                    <div class="productTop">
+                        <div class="likeImg"><img class="likeProduct" src="like.png"></div>
+                        <div class="divImg"><img class="imgProduct" src="SBX-UK-MOP-CaramelFrappuccino.jpg.jpg"></div>
+                    </div>
+                </div>
+                <div class="backgroundBottom">
+                    <div class="productBottom">
+                        <div class="productText">
+                            <div class="ProductNameText">Café expresso</div>
+                            <div class="ProductDescriptionText">Bebidas con los mejores granos de café 100% arábica,
+                                cuidadosamente seleccionados y tostados al más puro estilo Starbucks.</div>
                         </div>
+                        <button class="buttonAdd"> Añadir</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="backgroundTop">
+                    <div class="productTop">
+                        <div class="likeImg"><img class="likeProduct" src="like.png"></div>
+                        <div class="divImg"><img class="imgProduct" src="SBX-UK-MOP-CaramelFrappuccino.jpg.jpg"></div>
+                    </div>
+                </div>
+                <div class="backgroundBottom">
+                    <div class="productBottom">
+                        <div class="productText">
+                            <div class="ProductNameText">Café expresso</div>
+                            <div class="ProductDescriptionText">Bebidas con los mejores granos de café 100% arábica,
+                                cuidadosamente seleccionados y tostados al más puro estilo Starbucks.</div>
+                        </div>
+                        <button class="buttonAdd"> Añadir</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="page2.js"></script>
+
+</div>
+<script src="page2autoria.js"></script>
 </body>
+
 </html>

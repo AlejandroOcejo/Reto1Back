@@ -7,7 +7,6 @@ function sendDataToServer() {
     dataWeb.append("ACTION", "LOGIN");
     dataWeb.append('correo', correo);
     dataWeb.append('contrasena', contrasena);
-
     $.ajax({
         url: 'http://localhost:8080/cafeteriaFinal/Controller',
         data: {
