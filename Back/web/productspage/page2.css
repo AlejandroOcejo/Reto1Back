@@ -8,7 +8,7 @@ main {
     padding: 0;
 }
 body{
-    background-color: grey;
+    background-color: rgb(172, 172, 172);
 }
 
 a{
@@ -107,6 +107,73 @@ a{
 .tittle {
     color: white;
 }
+
+
+.bodyfullpart{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+.boxfirstpart1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+    background-color: #1e3930;
+    border-radius: 7px;
+    height: 280px;
+    width: 350px;
+    justify-content: center;
+}
+.cafeimage{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 3px white solid;
+}
+.corazonicon{
+    height: 30px;
+    width: 30px;
+    align-items: right;
+    margin-top: 0px;
+}
+.boxsecondpart1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    height: 180px;
+    width: 350px;
+}
+.titlebody{
+    font-size: 130%;
+}
+.text{
+    font-size: 100%;
+    color: rgb(44, 44, 44);
+}
+.añadirbutton{
+    border: 3px #1e3930 solid;
+    color: #1e3930;
+    font-size: 130%;
+    text-align: center;
+}
+
+
+
+
+
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -328,110 +395,71 @@ div.productrow a:hover {
 }
 
 .category-row{
-    display: flex;    
+    display: flex;   
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-@media only screen and (max-width: 1305px){
-    .fullpartfooter{
-        display: flex;
-        flex-direction: row;
-        gap: 250px;
-        padding: 20px;
-        background-color: #232325;
-    }
-}
-@media only screen and (max-width: 1532px){
-    .footer {
+@media only screen and (max-width: 1600px){
+    .bodyfullpart{
         display: flex;
         flex-direction: column;
-        margin-top: -4px;
+        gap: 50px;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
     }
-    .linepartfooter {
+    .box1{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxfirstpart1{
         display: flex;
         flex-direction: row;
-    }
-    .greenline{
-        width: 25%;
-        height: 20px;
-        background-color: #0faf4c;
-    }
-    .blackline{
-        width: 75%;
-        height: 20px;
-        background-color: #232325;
-    }
-    .fullpartfooter{
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        padding: 20px;
-        background-color: #232325;
+        gap: 10px;
+        padding: 10px;
+        background-color: #1e3930;
+        border-radius: 7px;
+        height: 280px;
+        width: 350px;
         justify-content: center;
     }
-    .firstpartfooter{
+    .cafeimage{
+        border-radius: 50%;
+        height: 250px;
+        width: 250px;
+        border: 3px white solid;
+    }
+    .corazonicon{
+        height: 30px;
+        width: 30px;
+        align-items: right;
+        margin-top: -10px;
+    }
+    .boxsecondpart1{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        margin-left: 0px;
-    }
-    .firstpartfooter1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-    .titlefooter{
-        font-size: 220%;
-        color: white;
+        gap: 5px;
+        background-color: white;
+        border-radius: 7px;
         text-align: center;
-        font-family: 'Gill Sans Nova Cond Ultra Bold';
+        justify-content: center;
+        padding: 10px;
+        height: 180px;
+        width: 350px;
     }
-    .logofooter {
-        width: 75px;
-        height: 75px;
+    .titlebody{
+        font-size: 130%;
     }
-    .iconosfooter{
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-    }
-    .iconossocial {
-        width: 35px;
-        height: 35px;
-    }
-    .secondpartfooter{
-        display: flex;
-        flex-direction: row;
-        gap: 150px;
-        margin-top: 7px;
-    }
-    .secondpartfooter1{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .secondpartfooter2{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-    }
-    .secondtitlefooter{
-        font-size: 200%;
-        color: #09953e;
-        font-family: 'Gill Sans Nova Cond Ultra Bold';
-    }
-    .secondtextfooter{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .textfooter{
+    .text{
         font-size: 100%;
-        color: white;
-        font-family: 'Rubik', sans-serif;
+        color: rgb(44, 44, 44);
+    }
+    .añadirbutton{
+        border: 3px #1e3930 solid;
+        color: #1e3930;
+        font-size: 130%;
+        text-align: center;
     }
 }
